@@ -33,100 +33,110 @@ export default function Index() {
 
   const services = [
     {
-      icon: 'Scale',
-      title: 'Корпоративное право',
-      description: 'Юридическое сопровождение бизнеса, сделок M&A, корпоративные споры'
+      icon: 'Users',
+      title: 'Гражданские споры',
+      description: 'Взыскание долгов, оспаривание сделок, защита прав потребителей'
     },
     {
-      icon: 'FileText',
-      title: 'Договорное право',
-      description: 'Составление и экспертиза договоров, претензионная работа'
+      icon: 'Heart',
+      title: 'Семейное право',
+      description: 'Развод, раздел имущества, алименты, определение места жительства детей'
+    },
+    {
+      icon: 'Shield',
+      title: 'Уголовная защита',
+      description: 'Представительство на следствии и в суде, защита на всех стадиях процесса'
     },
     {
       icon: 'Building2',
-      title: 'Арбитражные споры',
-      description: 'Представительство интересов в судах всех инстанций'
-    },
-    {
-      icon: 'UserCheck',
-      title: 'Трудовое право',
-      description: 'Защита прав работников и работодателей, трудовые споры'
+      title: 'Корпоративное право',
+      description: 'Регистрация и реорганизация бизнеса, сопровождение сделок, разрешение корпоративных конфликтов'
     },
     {
       icon: 'Home',
       title: 'Недвижимость',
-      description: 'Сделки с недвижимостью, регистрация прав, споры'
+      description: 'Сделки с недвижимостью, оспаривание прав, споры с застройщиками'
     },
     {
-      icon: 'Shield',
+      icon: 'Briefcase',
+      title: 'Трудовые споры',
+      description: 'Защита прав работников и работодателей, восстановление на работе, взыскание компенсаций'
+    },
+    {
+      icon: 'Calculator',
       title: 'Налоговое право',
-      description: 'Налоговые споры, оптимизация, консультации'
+      description: 'Консультации, защита при налоговых проверках, обжалование решений ФНС'
     }
   ];
 
-  const practices = [
-    { name: 'Банкротство', cases: '120+' },
-    { name: 'Интеллектуальная собственность', cases: '85+' },
-    { name: 'Уголовное право', cases: '200+' },
-    { name: 'Семейное право', cases: '150+' }
+  const advantages = [
+    { name: 'Опыт и профессионализм', value: '15+', unit: 'лет' },
+    { name: 'Индивидуальный подход', value: '100%', unit: 'клиентов' },
+    { name: 'Прозрачность работы', value: '24/7', unit: 'связь' },
+    { name: 'Результативность', value: '90%', unit: 'успех' }
   ];
 
-  const team = [
+  const workProcess = [
     {
-      name: 'Александр Петров',
-      position: 'Управляющий партнер',
-      experience: '15 лет опыта'
+      step: '1',
+      title: 'Бесплатная консультация',
+      description: 'Оцениваем ситуацию и определяем возможные пути решения'
     },
     {
-      name: 'Елена Смирнова',
-      position: 'Партнер, корпоративное право',
-      experience: '12 лет опыта'
+      step: '2',
+      title: 'Разработка стратегии',
+      description: 'Составляем план действий с учётом ваших целей и рисков'
     },
     {
-      name: 'Михаил Иванов',
-      position: 'Партнер, арбитраж',
-      experience: '14 лет опыта'
+      step: '3',
+      title: 'Заключение договора',
+      description: 'Фиксируем объём услуг, сроки и стоимость'
     },
     {
-      name: 'Ольга Козлова',
-      position: 'Старший юрист',
-      experience: '8 лет опыта'
+      step: '4',
+      title: 'Реализация',
+      description: 'Ведём дело до достижения результата'
+    },
+    {
+      step: '5',
+      title: 'Отчёт и рекомендации',
+      description: 'Подводим итоги и даём советы по предотвращению подобных ситуаций'
     }
   ];
 
   const testimonials = [
     {
-      text: 'Профессиональная команда, которая решила наш сложный корпоративный спор. Рекомендуем!',
+      text: 'Профессиональная команда, которая решила наш сложный спор. Индивидуальный подход и качественная работа!',
       author: 'ООО "ТехПром"',
       rating: 5
     },
     {
-      text: 'Отличное юридическое сопровождение сделки. Все прошло быстро и без проблем.',
-      author: 'АО "СтройИнвест"',
+      text: 'Отличное юридическое сопровождение сделки с недвижимостью. Все прошло быстро и без проблем.',
+      author: 'Андрей К.',
       rating: 5
     },
     {
-      text: 'Грамотные специалисты, внимательное отношение к клиенту. Спасибо за помощь!',
-      author: 'ИП Сидоров А.В.',
+      text: 'Грамотные специалисты, внимательное отношение к клиенту. Помогли выиграть семейный спор. Спасибо!',
+      author: 'Елена М.',
       rating: 5
     }
   ];
 
   const blogPosts = [
     {
-      title: 'Новые изменения в корпоративном законодательстве 2024',
+      title: 'Новые изменения в законодательстве о недвижимости 2024',
       date: '15 декабря 2023',
-      category: 'Корпоративное право'
+      category: 'Недвижимость'
     },
     {
       title: 'Как защитить бизнес от недобросовестных контрагентов',
       date: '10 декабря 2023',
-      category: 'Договорное право'
+      category: 'Корпоративное право'
     },
     {
-      title: 'Арбитражная практика: топ-5 ошибок в исковых заявлениях',
+      title: 'Трудовые споры: топ-5 прав работников, о которых не знают',
       date: '5 декабря 2023',
-      category: 'Арбитраж'
+      category: 'Трудовое право'
     }
   ];
 
@@ -137,15 +147,15 @@ export default function Index() {
           <div className="flex items-center justify-between h-20">
             <div className="flex items-center space-x-2">
               <Icon name="Scale" className="h-8 w-8 text-secondary" />
-              <span className="text-2xl font-bold text-primary">ЛексПро</span>
+              <span className="text-xl md:text-2xl font-bold text-primary">Ерещенко и Партнёры</span>
             </div>
             
             <div className="hidden md:flex items-center space-x-8">
               {[
                 { id: 'home', label: 'Главная' },
                 { id: 'services', label: 'Услуги' },
-                { id: 'practice', label: 'Практика' },
-                { id: 'team', label: 'Команда' },
+                { id: 'advantages', label: 'Преимущества' },
+                { id: 'process', label: 'Как работаем' },
                 { id: 'about', label: 'О нас' },
                 { id: 'blog', label: 'Блог' },
                 { id: 'testimonials', label: 'Отзывы' },
@@ -174,11 +184,11 @@ export default function Index() {
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold text-primary mb-6 leading-tight">
-              Профессиональная <span className="text-secondary">юридическая</span> защита
+              Юридическое бюро <span className="text-secondary">«Ерещенко и Партнёры»</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Комплексные юридические услуги для бизнеса и частных лиц. 
-              Защищаем ваши интересы с 2008 года.
+              Ростов-на-Дону — защита ваших прав и интересов. 
+              Мы решаем сложные юридические задачи более 15 лет.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" onClick={() => scrollToSection('contacts')} className="text-lg px-8">
@@ -195,12 +205,12 @@ export default function Index() {
                 <div className="text-sm text-muted-foreground">лет опыта</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-secondary mb-2">500+</div>
+                <div className="text-4xl font-bold text-secondary mb-2">1000+</div>
                 <div className="text-sm text-muted-foreground">выигранных дел</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-secondary mb-2">98%</div>
-                <div className="text-sm text-muted-foreground">довольных клиентов</div>
+                <div className="text-4xl font-bold text-secondary mb-2">90%</div>
+                <div className="text-sm text-muted-foreground">дел в пользу клиентов</div>
               </div>
             </div>
           </div>
@@ -236,19 +246,20 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="practice" className="py-20 px-4">
+      <section id="advantages" className="py-20 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Практика</h2>
-            <p className="text-xl text-muted-foreground">Специализация и опыт нашей команды</p>
+            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Почему выбирают нас?</h2>
+            <p className="text-xl text-muted-foreground">Наши преимущества и гарантии</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {practices.map((practice, index) => (
+            {advantages.map((advantage, index) => (
               <Card key={index} className="text-center hover:shadow-lg transition-shadow">
                 <CardContent className="p-8">
-                  <div className="text-5xl font-bold text-secondary mb-3">{practice.cases}</div>
-                  <h3 className="text-lg font-semibold text-primary">{practice.name}</h3>
+                  <div className="text-5xl font-bold text-secondary mb-3">{advantage.value}</div>
+                  <div className="text-sm text-muted-foreground mb-3">{advantage.unit}</div>
+                  <h3 className="text-lg font-semibold text-primary">{advantage.name}</h3>
                 </CardContent>
               </Card>
             ))}
@@ -256,23 +267,24 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="team" className="py-20 px-4 bg-muted/30">
+      <section id="process" className="py-20 px-4 bg-muted/30">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Наша команда</h2>
-            <p className="text-xl text-muted-foreground">Опытные профессионалы на защите ваших интересов</p>
+            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Как мы работаем?</h2>
+            <p className="text-xl text-muted-foreground">Прозрачный и понятный процесс работы</p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {team.map((member, index) => (
-              <Card key={index} className="text-center hover:shadow-xl transition-all hover:-translate-y-1">
-                <CardContent className="p-6">
-                  <div className="w-32 h-32 rounded-full bg-gradient-to-br from-primary to-secondary mx-auto mb-4 flex items-center justify-center">
-                    <Icon name="User" className="h-16 w-16 text-white" />
+          <div className="max-w-4xl mx-auto space-y-6">
+            {workProcess.map((item, index) => (
+              <Card key={index} className="hover:shadow-xl transition-all hover:-translate-y-1">
+                <CardContent className="p-6 flex items-start gap-6">
+                  <div className="w-16 h-16 rounded-full bg-secondary flex items-center justify-center flex-shrink-0">
+                    <span className="text-2xl font-bold text-white">{item.step}</span>
                   </div>
-                  <h3 className="text-lg font-semibold text-primary mb-1">{member.name}</h3>
-                  <p className="text-sm text-secondary font-medium mb-2">{member.position}</p>
-                  <p className="text-sm text-muted-foreground">{member.experience}</p>
+                  <div>
+                    <h3 className="text-xl font-semibold text-primary mb-2">{item.title}</h3>
+                    <p className="text-muted-foreground">{item.description}</p>
+                  </div>
                 </CardContent>
               </Card>
             ))}
@@ -288,31 +300,26 @@ export default function Index() {
           
           <div className="space-y-6 text-lg text-muted-foreground">
             <p>
-              <strong className="text-primary">ЛексПро</strong> — это команда высококвалифицированных юристов 
-              с многолетним опытом работы в различных отраслях права. Мы специализируемся 
-              на комплексном юридическом сопровождении бизнеса и защите интересов частных лиц.
+              Мы — команда опытных юристов и адвокатов, которые более 15 лет помогают физическим и юридическим лицам находить выход из самых непростых правовых ситуаций.
             </p>
             <p>
-              За 15 лет работы мы выиграли более 500 дел в судах всех инстанций, 
-              включая Верховный суд РФ. Наш подход основан на глубоком понимании 
-              законодательства, внимательном отношении к каждому клиенту и стремлении 
-              к максимально эффективному результату.
+              Наша цель — обеспечить вам надёжную юридическую защиту и максимально эффективное решение ваших вопросов. Более 90% дел завершаются в пользу наших клиентов благодаря профильной специализации и многолетней практике.
             </p>
             <div className="grid md:grid-cols-3 gap-6 mt-12">
               <div className="text-center p-6 bg-muted/30 rounded-lg">
                 <Icon name="Award" className="h-12 w-12 text-secondary mx-auto mb-3" />
-                <h4 className="font-semibold text-primary mb-2">Экспертность</h4>
-                <p className="text-sm">Глубокие знания во всех отраслях права</p>
+                <h4 className="font-semibold text-primary mb-2">Прозрачность</h4>
+                <p className="text-sm">Чёткие сроки, понятная стоимость услуг, регулярные отчёты о проделанной работе</p>
+              </div>
+              <div className="text-center p-6 bg-muted/30 rounded-lg">
+                <Icon name="Lock" className="h-12 w-12 text-secondary mx-auto mb-3" />
+                <h4 className="font-semibold text-primary mb-2">Конфиденциальность</h4>
+                <p className="text-sm">Все сведения, полученные от клиента, строго защищены адвокатской тайной</p>
               </div>
               <div className="text-center p-6 bg-muted/30 rounded-lg">
                 <Icon name="Target" className="h-12 w-12 text-secondary mx-auto mb-3" />
-                <h4 className="font-semibold text-primary mb-2">Результат</h4>
-                <p className="text-sm">Фокус на достижении целей клиента</p>
-              </div>
-              <div className="text-center p-6 bg-muted/30 rounded-lg">
-                <Icon name="Heart" className="h-12 w-12 text-secondary mx-auto mb-3" />
-                <h4 className="font-semibold text-primary mb-2">Забота</h4>
-                <p className="text-sm">Индивидуальный подход к каждому</p>
+                <h4 className="font-semibold text-primary mb-2">Результативность</h4>
+                <p className="text-sm">Более 90% дел завершаются в пользу наших клиентов</p>
               </div>
             </div>
           </div>
@@ -383,28 +390,28 @@ export default function Index() {
                   <Icon name="MapPin" className="h-6 w-6 text-secondary mt-1" />
                   <div>
                     <p className="font-medium text-primary">Адрес</p>
-                    <p className="text-muted-foreground">г. Москва, ул. Тверская, д. 10, офис 501</p>
+                    <p className="text-muted-foreground">г. Ростов-на-Дону, ул. Островского, 22, офис 456</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <Icon name="Phone" className="h-6 w-6 text-secondary mt-1" />
                   <div>
-                    <p className="font-medium text-primary">Телефон</p>
-                    <p className="text-muted-foreground">+7 (495) 123-45-67</p>
+                    <p className="font-medium text-primary">Телефон / WhatsApp</p>
+                    <p className="text-muted-foreground">+7 (928) 279-80-78</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <Icon name="Mail" className="h-6 w-6 text-secondary mt-1" />
                   <div>
                     <p className="font-medium text-primary">Email</p>
-                    <p className="text-muted-foreground">info@lexspro.ru</p>
+                    <p className="text-muted-foreground">2798078@mail.ru</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <Icon name="Clock" className="h-6 w-6 text-secondary mt-1" />
                   <div>
                     <p className="font-medium text-primary">Режим работы</p>
-                    <p className="text-muted-foreground">Пн-Пт: 9:00 - 19:00<br />Сб-Вс: по записи</p>
+                    <p className="text-muted-foreground">Пн-Пт: 09:00 - 18:00<br />Сб: 10:00 - 14:00</p>
                   </div>
                 </div>
               </div>
@@ -471,41 +478,41 @@ export default function Index() {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <Icon name="Scale" className="h-8 w-8 text-secondary" />
-                <span className="text-2xl font-bold">ЛексПро</span>
+                <span className="text-xl font-bold">Ерещенко и Партнёры</span>
               </div>
               <p className="text-sm opacity-80">
-                Профессиональная юридическая защита с 2008 года
+                Юридическое бюро в Ростове-на-Дону с 2008 года
               </p>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Услуги</h4>
               <ul className="space-y-2 text-sm opacity-80">
+                <li>Гражданские споры</li>
+                <li>Семейное право</li>
+                <li>Уголовная защита</li>
                 <li>Корпоративное право</li>
-                <li>Арбитражные споры</li>
-                <li>Договорное право</li>
-                <li>Трудовое право</li>
               </ul>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Компания</h4>
               <ul className="space-y-2 text-sm opacity-80">
                 <li>О нас</li>
-                <li>Команда</li>
-                <li>Практика</li>
-                <li>Блог</li>
+                <li>Как мы работаем</li>
+                <li>Наши преимущества</li>
+                <li>Отзывы</li>
               </ul>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Контакты</h4>
               <ul className="space-y-2 text-sm opacity-80">
-                <li>+7 (495) 123-45-67</li>
-                <li>info@lexspro.ru</li>
-                <li>г. Москва, ул. Тверская, 10</li>
+                <li>+7 (928) 279-80-78</li>
+                <li>2798078@mail.ru</li>
+                <li>г. Ростов-на-Дону, ул. Островского, 22</li>
               </ul>
             </div>
           </div>
           <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center text-sm opacity-80">
-            © 2024 ЛексПро. Все права защищены.
+            © 2024 Юридическое бюро «Ерещенко и Партнёры». Все права защищены.
           </div>
         </div>
       </footer>
